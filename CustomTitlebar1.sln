@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTitlebar1", "CustomTitlebar1\CustomTitlebar1.csproj", "{FD038257-CDBE-4898-A7EB-F50B3A4FD46E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD038257-CDBE-4898-A7EB-F50B3A4FD46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD038257-CDBE-4898-A7EB-F50B3A4FD46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD038257-CDBE-4898-A7EB-F50B3A4FD46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD038257-CDBE-4898-A7EB-F50B3A4FD46E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A71A0FBE-B347-498C-B717-AB749F9B8DE3}
+	EndGlobalSection
+EndGlobal

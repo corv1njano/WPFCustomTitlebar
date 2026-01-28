@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="Color.Font.Light">#F3F3F3</Color>
+    <Color x:Key="Color.Titlebar.Background">#252E36</Color>
+    <Color x:Key="Color.Titlebar.Button.Hover">#4C565F</Color>
+    <Color x:Key="Color.Titlebar.CloseButton.Hover">#F74949</Color>
+
+    <SolidColorBrush x:Key="Font.Light" Color="{StaticResource Color.Font.Light}"/>
+    <SolidColorBrush x:Key="Titlebar.Background" Color="{StaticResource Color.Titlebar.Background}"/>
+    <SolidColorBrush x:Key="Titlebar.Button.Hover" Color="{StaticResource Color.Titlebar.Button.Hover}"/>
+    <SolidColorBrush x:Key="Titlebar.CloseButton.Hover" Color="{StaticResource Color.Titlebar.CloseButton.Hover}"/>
+
+</ResourceDictionary>

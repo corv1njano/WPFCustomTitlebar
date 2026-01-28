@@ -1,0 +1,76 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DrawingGroup x:Key="closeDrawingGroup" ClipGeometry="M0,0 V128 H128 V0 H0 Z">
+        <DrawingGroup Opacity="1" Transform="1.138,-1.138,0.555767,0.555767,-43.0116,109.134">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+        <DrawingGroup Opacity="1" Transform="1.138,1.138,-0.555767,0.555767,21.1049,-43.0116">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="WindowControl.Close" Drawing="{StaticResource closeDrawingGroup}" />
+
+    <DrawingGroup x:Key="minimizeDrawingGroup" ClipGeometry="M0,0 V128 H128 V0 H0 Z">
+        <DrawingGroup Opacity="1" Transform="1.2857,-1.43682E-16,1.34469E-16,0.831015,-20.6812,16.0647">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="WindowControl.Minimize" Drawing="{StaticResource minimizeDrawingGroup}" />
+
+    <Geometry x:Key="restoreGeometry">F0 M128,128z M0,0z M121.5,81.495L121.5,121.163 109.5,121.163 109.5,121.06 6.5,121.06 6.5,6.493 46.178,6.493 46.178,-33.071 161.178,-33.071 161.178,81.599 149.178,81.599 149.178,81.495 121.5,81.495z M109.5,33.472L18.5,33.472 18.5,109.06 109.5,109.06 109.5,33.472z M121.5,69.495L149.178,69.495 149.178,-6.093 58.178,-6.093 58.178,6.493 121.5,6.493 121.5,69.495z</Geometry>
+    <DrawingGroup x:Key="restoreDrawingGroup" ClipGeometry="M0,0 V128 H128 V0 H0 Z">
+        <DrawingGroup.Transform>
+            <TranslateTransform X="0" Y="33.070999145507813" />
+        </DrawingGroup.Transform>
+        <DrawingGroup Opacity="1" Transform="0.827524,0,0,0.829906,-5.3789,27.4459">
+            <GeometryDrawing Brush="#000000" Geometry="{StaticResource restoreGeometry}" />
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="WindowControl.Restore" Drawing="{StaticResource restoreDrawingGroup}" />
+
+    <DrawingGroup x:Key="maximizeDrawingGroup" ClipGeometry="M0,0 V128 H128 V0 H0 Z">
+        <DrawingGroup Opacity="1" Transform="1.21762,-1.74582E-16,1.27349E-16,1.00973,-16.1974,-38.2616">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+        <DrawingGroup Opacity="1" Transform="-1.50476E-17,-1.02244,0.449128,-7.94345E-17,-13.407,140.119">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+        <DrawingGroup Opacity="1" Transform="-1.50476E-17,-1.02244,0.449128,-7.94345E-17,89.593,140.222">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+        <DrawingGroup Opacity="1" Transform="-1.04821,1.85446E-16,-1.60706E-16,-0.449128,133.039,140.967">
+            <GeometryDrawing Brush="#000000">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="18.641,44.324,94.447,26.718" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="WindowControl.Maximize" Drawing="{StaticResource maximizeDrawingGroup}" />
+
+</ResourceDictionary>

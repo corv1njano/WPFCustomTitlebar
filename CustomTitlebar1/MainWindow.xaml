@@ -1,0 +1,91 @@
+﻿<Window x:Class="CustomTitlebar1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomTitlebar1"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="550" Width="800"
+        MinHeight="550" MinWidth="800"
+        ResizeMode="CanResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome ResizeBorderThickness="8"
+                      UseAeroCaptionButtons="False"
+                      CaptionHeight="32"/>
+    </WindowChrome.WindowChrome>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- titlebar -->
+        <Grid Grid.Row="0" Background="{StaticResource Titlebar.Background}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <Image Source="/Assets/Images/app_logo.png"
+                       Width="20"
+                       Height="20"
+                       Margin="12,0"
+                       VerticalAlignment="Center"
+                       RenderOptions.BitmapScalingMode="HighQuality"/>
+                <TextBlock Text="Application Name"
+                           FontFamily="Arial"
+                           Foreground="{DynamicResource Font.Light}"
+                           FontSize="15"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <StackPanel.Resources>
+                    <Style TargetType="Rectangle">
+                        <Setter Property="Height" Value="10"/>
+                        <Setter Property="Width" Value="10"/>
+                        <Setter Property="Fill" Value="{DynamicResource Font.Light}"/>
+                    </Style>
+                </StackPanel.Resources>
+                
+                <Button Style="{StaticResource Button.WindowControl}" Click="Button_Minimize">
+                    <Button.Content>
+                        <Rectangle>
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource WindowControl.Minimize}" Stretch="Uniform"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </Button.Content>
+                </Button>
+                <Button Style="{StaticResource Button.WindowControl}" Click="Button_MaximizeRestore">
+                    <Button.Content>
+                        <Rectangle>
+                            <Rectangle.OpacityMask>
+                                <ImageBrush x:Name="MaximizeRestoreIcon" ImageSource="{StaticResource WindowControl.Maximize}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </Button.Content>
+                </Button>
+                <Button Style="{StaticResource Button.WindowControl.Close}" Click="Button_Close">
+                    <Button.Content>
+                        <Rectangle>
+                            <Rectangle.OpacityMask>
+                                <ImageBrush ImageSource="{StaticResource WindowControl.Close}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!-- content -->
+        <Grid Grid.Row="1">
+            
+        </Grid>
+    </Grid>
+</Window>
